@@ -15,6 +15,7 @@
 *   **Automated Data Sync Engine:** Daily scheduled batch synchronization processes via Spring Scheduler ingest real-time sales transactions, customer activity status, and catalog changes from Zoho Inventory.
 *   **Robust REST API:** Secure, authenticated REST API endpoints filterable by customer status, specific product categories, and prediction horizon metrics.
 *   **Enterprise-Grade Administration:** Secure workspace operations with custom authorization checks, password modification routines, and admin-only user account management features.
+*   **Fully Responsive Mobile View:** Tailored dashboard layouts, custom CSS media queries, and touch-friendly controls that adapt automatically to tablets and smartphones.
 
 ---
 
@@ -40,6 +41,18 @@ OrderSense turns raw transactional history into actionable visual reports throug
 *   **Monthly Demand Projections:** Automatically projects the total required stock replenishment for any given month based on aggregate B2B customer consumption rates.
 *   **Product-centric View:** Lists total required volume and estimated cost per product, including preferred vendor/manufacturer and cost price.
 *   **Vendor-centric View:** Groups all forecasted purchases by manufacturer/preferred vendor. Displays total items count and estimated total cost. This allows procurement teams to prepare bulk replenishment purchase orders in seconds.
+
+---
+
+## 📱 Responsive & Mobile-Optimized Design
+
+OrderSense is built with a mobile-first philosophy, utilizing vanilla CSS media queries and flexible layout patterns to ensure smooth operations on smartphones, tablets, and desktop displays:
+
+*   **Dynamic Grid Adapters:** The main KPI statistics dashboard automatically adapts from 4 columns on large desktop monitors to 2 columns on tablets, and scales down to a single-column stack on mobile screens.
+*   **Adaptive Panel Stacking:** On devices with screen widths under `640px` (e.g., mobile phones), the Customer Consumption Profile cards transition from a dual-column layout (donut chart and legend list side-by-side) to a vertical stack.
+*   **Touch-Friendly Navigation & Controls:** Filter dropdowns, search bars, and active chip filters dynamically expand to full-width targets on viewports below `768px` for comfortable finger tap targets.
+*   **Responsive SVG Visualizations:** Interactive SVG-based donut charts scale fluidly inside their containers and recalculate hover effects and rings, allowing touch inputs to trigger slice-specific breakdowns seamlessly.
+*   **Overflow Prevention & Decelerated Swiping:** Complex grids like the Reorder Alerts Grid and PO Forecast tables utilize custom overflow containers (`-webkit-overflow-scrolling: touch`) that enable smooth, native horizontal swiping on mobile screens without breaking the page layout.
 
 ---
 
